@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Rock Paper Scissors Game!</title>
+  </head>
+  <body class="bg-[url(/img/bgPaper.jpg)] bg-top bg-cover">
+    <container class="flex flex-col items-center mx-auto gap-16">
+      <h1 class="text-[2rem]">Rock Paper Scissors</h1>
+      <h3 id="result" class="text-[3rem]"></h3>
+      <div id="cardSection" class="flex flow-row gap-16 items-center">
+        <div id="mySection" class="flex flex-col items-center">
+          <div
+            id="myCard"
+            class="bg-gray-100 rounded-[1rem] p-8 w-[200px] h-[200px]"
+          ></div>
+          <h1 id="myScore" class="text-[2rem] text-white">0</h1>
+        </div>
+        <div><h1 class="text-[2rem]">VS</h1></div>
+
+        <div id="opponentSection" class="flex flex-col items-center">
+          <div
+            id="opponentCard"
+            class="bg-gray-100 rounded-[1rem] p-8 w-[200px] h-[200px]"
+          >
+            <!-- <img src="img/Paper.png" alt="" /> -->
+          </div>
+          <h1 id="opponentScore" class="text-[2rem] text-white">0</h1>
+        </div>
+      </div>
+      <div id="myOptions" class="">
+        <button
+          id="rockBtn"
+          class="py-4 px-12 text-white rounded-full bg-pink-500"
+        >
+          Rock
+        </button>
+        <button
+          id="paperBtn"
+          class="py-4 px-12 text-white rounded-full bg-pink-500"
+        >
+          Paper
+        </button>
+        <button
+          id="scissorsBtn"
+          class="py-4 px-12 text-white rounded-full bg-pink-500"
+        >
+          Scissors
+        </button>
+        <button
+          id="resetBtn"
+          class="py-4 px-12 text-white rounded-full bg-red-500"
+        >
+          Reset
+        </button>
+      </div>
+    </container>
+  </body>
+</html>

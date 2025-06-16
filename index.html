@@ -7,10 +7,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Rock Paper Scissors Game!</title>
   </head>
-  <body class="bg-[url(img/bgPaper.jpg)] bg-top bg-cover">
-    <container class="flex flex-col items-center mx-auto gap-16">
-      <h1 class="text-[2rem]">Rock Paper Scissors</h1>
-      <h3 id="result" class="text-[3rem]"></h3>
+  <body
+    class="bg-blue-300 bg-[url(img/bgGif.gif)] bg-blend-multiply bg-center bg-cover"
+  >
+    <container class="flex flex-col items-center mx-auto gap-16 py-4">
+      <h1 class="text-[2rem] text-white">Rock Paper Scissors</h1>
+      <h3 id="result" class="text-[3rem] text-white"></h3>
       <div id="cardSection" class="flex flow-row gap-16 items-center">
         <div id="mySection" class="flex flex-col items-center">
           <div
@@ -19,7 +21,7 @@
           ></div>
           <h1 id="myScore" class="text-[2rem] text-white">0</h1>
         </div>
-        <div><h1 class="text-[2rem]">VS</h1></div>
+        <div><h1 class="text-[2rem] font-bold text-white">VS</h1></div>
 
         <div id="opponentSection" class="flex flex-col items-center">
           <div
@@ -34,25 +36,25 @@
       <div id="myOptions" class="">
         <button
           id="rockBtn"
-          class="py-4 px-12 text-white rounded-full bg-pink-500"
+          class="py-4 px-12 text-white rounded-full bg-pink-500 hover:bg-pink-700"
         >
           Rock
         </button>
         <button
           id="paperBtn"
-          class="py-4 px-12 text-white rounded-full bg-pink-500"
+          class="py-4 px-12 text-white rounded-full bg-pink-500 hover:bg-pink-700"
         >
           Paper
         </button>
         <button
           id="scissorsBtn"
-          class="py-4 px-12 text-white rounded-full bg-pink-500"
+          class="py-4 px-12 text-white rounded-full bg-pink-500 hover:bg-pink-700"
         >
           Scissors
         </button>
         <button
           id="resetBtn"
-          class="py-4 px-12 text-white rounded-full bg-red-500"
+          class="py-4 px-12 text-white rounded-full bg-red-500 hover:bg-red-700"
         >
           Reset
         </button>

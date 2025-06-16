@@ -20,10 +20,12 @@ const image = document.createElement("img");
 const image2 = document.createElement("img");
 
 rockBtn.addEventListener("click", function () {
+  //Identfy input on both side
   const myInput = "Rock";
   const opponentInput =
     rPSOptions[Math.floor(Math.random() * rPSOptions.length)];
 
+  //Compare who wins
   if (myInput === opponentInput) {
     result.textContent = "It's a draw game!";
   } else if (winMap[myInput] === opponentInput) {
@@ -33,8 +35,10 @@ rockBtn.addEventListener("click", function () {
     result.textContent = "Computer wins!";
     opponentScore.textContent = parseInt(opponentScore.textContent) + 1;
   }
+  //clear the Card section before insert
   myCard.innerHTML = "";
   opponentCard.innerHTML = "";
+  //insert the options into each card
   image.src = `img/${myInput}.png`;
   myCard.appendChild(image);
   image2.src = `img/${opponentInput}.png`;
@@ -83,6 +87,7 @@ scissorsBtn.addEventListener("click", function () {
   image2.src = `img/${opponentInput}.png`;
   opponentCard.appendChild(image2);
 });
+
 resetBtn.addEventListener("click", function () {
   myCard.innerHTML = "";
   opponentCard.innerHTML = "";
